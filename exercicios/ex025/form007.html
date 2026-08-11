@@ -47,7 +47,8 @@
 
         <p>
             <label for="imsg">Mensagem:</label> <br>
-            <textarea name="msg" id="imsg" cols="30" rows="6" placeholder="Escreva aqui" maxlength="10"></textarea>
+            <textarea name="msg" id="imsg" cols="30" rows="6" placeholder="Escreva aqui" maxlength="50"></textarea> <br>
+            <output id="iletras">Caracteres: 50</output> 
         </p>
         
         <p>
@@ -55,5 +56,23 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+        const textarea = document.getElementById('imsg');
+        const output = document.getElementById('iletras');
+        const form = document.getElementById('meuFormulario');
+        const maxCaracteres = textarea.maxLength;
+
+        // Atualiza a contagem a cada caractere digitado ou apagado
+        textarea.addEventListener('input', () => {
+            const restantes = maxCaracteres - textarea.value.length;
+            output.textContent = `Caracteres restantes: ${restantes}`;
+        });
+
+        // Reseta o contador para 50 quando o botão "Limpar" for clicado
+        form.addEventListener('reset', () => {
+            output.textContent = `Caracteres restantes: ${maxCaracteres}`;
+        });
+    </script>
 </body>
 </html>
