@@ -11,6 +11,20 @@ Desktop: 992px até 1200px
 Grandes Telas: acima de 1200px
 */
 
+@media screen and (orientation: landscape) {  /* Celular Paisagem */
+    img#phone { display: block;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+
+    body{
+        background-image: url(../imagens/back-phone.jpg);
+        background-size: cover;
+        background-position: left bottom;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {  /* Tablet */
     img#phone { display: none;}
     img#tablet { display: block;}
