@@ -22,6 +22,24 @@ header h1{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.383);
 }
 
+#burguer{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none;
+}
+
 menu ul{
     list-style-type: none;
 }
