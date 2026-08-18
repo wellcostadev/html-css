@@ -7,21 +7,24 @@
     <style>
         div.conteiner{
             background-color: antiquewhite;
-            height: 500px;
+            height: 300px;
             display: flex;
              /* 
             flex-direction: row ;
             flex-wrap: nowrap; 
             */
-            flex-flow: column wrap;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            
         }
 
         div.item{
-            padding: 50px;
+            
             background-color: lightcoral;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            
         }
     </style>
 </head>
