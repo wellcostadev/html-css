@@ -27,14 +27,14 @@ header{
 }
 
 header h1{
-    border: 1px dotted rgba(0, 0, 0, 0.47);
+    /*border: 1px dotted rgba(0, 0, 0, 0.47);*/
     padding: 10px;
     flex: 0 0 200px;
     
 }
 
 header nav{
-    border: 1px dotted rgba(0, 0, 0, 0.491);
+    /*border: 1px dotted rgba(0, 0, 0, 0.491);*/
     
     display: flex;
     flex-flow: row wrap;
